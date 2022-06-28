@@ -1,0 +1,30 @@
+body{
+  background-color: antiquewhite;
+}
+main{
+    
+  display:flex;
+  align-items: center;
+  }
+  .content{
+    /* pozwól wyświetlić się elementowi na pełną szerokość*/
+    flex:1;
+    display: flex;
+    justify-content: center; /* wycentruj zdjęcie horyzontalnie */
+    
+  }
+  .leftArr,
+  .rightArr{
+    border: 2px dashed red;
+    padding: 1rem;
+    cursor: pointer;
+  }
+
+  footer{
+    /* 
+    display:flex;
+    justify-content: end;
+    */
+    text-align: right;
+    margin-top: 4rem;
+  }
