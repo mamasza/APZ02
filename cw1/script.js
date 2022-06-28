@@ -11,6 +11,7 @@ const zdjecia = ["", "Ewa", "Maria"];  // tablica (array) stringów
       }
     ];
 */
+let slideNr = 0;
 const data = [
   {
     title: "pink lake",
@@ -43,4 +44,18 @@ function changeHTMLInfo (slideNr){
   const h2 = document.querySelector('h2')
   h2.innerText = data[slideNr].title;
 
+}
+const lewa = document.querySelector('.leftArr')
+lewa.onclick = function(){
+  console.log(slideNr)
+  slideNr=slideNr -1;
+  changeHTMLInfo(slideNr);
+  console.log(slideNr)
+}
+const prawa = document.querySelector('.rightArr')
+prawa.onclick = function(){
+  console.log(slideNr)
+  slideNr=slideNr +1;
+  changeHTMLInfo(slideNr);
+  console.log(slideNr)
 }
