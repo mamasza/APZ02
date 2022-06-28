@@ -36,19 +36,24 @@ function changeHTMLInfo (slideNr){
   const title = data[slideNr].title 
   const titleDOM =document.querySelector("h2") 
   titleDOM.innerHTML=title
+
+  console.log(data[slideNr].title,data[slideNr].src);
+  const picture = document.querySelector('.picture')
+  picture.src = data[slideNr].src;
+  const h2 = document.querySelector('h2')
+  h2.innerText = data[slideNr].title;
+
 }
 const lewa = document.querySelector('.lefftArr')
 lewa.onclick = function(){
     console.log("click")
-slideNr = slideNr-1;
-
-changeHTMLinfo(slideNr);
+    slideNr = slideNr-1;
+    changeHTMLinfo(slideNr);
 }
 
 const prawa = document.querySelector('.rightArr')
 prawa.onclick = function(){
-    console.log("click")
+    console.log("click");
     slideNr = slideNr+1;
-
-changeHTMLinfo(slideNr);
+    changeHTMLinfo(slideNr);
 }
