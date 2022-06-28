@@ -2,29 +2,22 @@ body{
   background-color: antiquewhite;
 }
 main{
-    
   display:flex;
   align-items: center;
-  }
-  .content{
-    /* pozwól wyświetlić się elementowi na pełną szerokość*/
-    flex:1;
-    display: flex;
-    justify-content: center; /* wycentruj zdjęcie horyzontalnie */
-    
-  }
-  .leftArr,
-  .rightArr{
-    border: 2px dashed red;
-    padding: 1rem;
-    cursor: pointer;
-  }
+}
+.content{
+  flex:1; /* pozwól wyświetlić się elementowi na pełną szerokość */
+  display:flex;
+  justify-content: center; /* wycentruj zjęcie horyzontalnie */
+}
 
-  footer{
-    /* 
-    display:flex;
-    justify-content: end;
-    */
-    text-align: right;
-    margin-top: 4rem;
-  }
+.leftArr,
+.rightArr{  padding:1rem;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #fff;
+}
+footer{
+  text-align: right;
+  margin-top:4rem;
+}
