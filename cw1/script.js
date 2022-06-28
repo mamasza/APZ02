@@ -52,6 +52,7 @@ lewa.onclick = function(){
   changeHTMLInfo(slideNr);
   console.log(slideNr)
 }
+//prawa
 const prawa = document.querySelector('.rightArr')
 prawa.onclick = function(){
   console.log(slideNr)
