@@ -11,7 +11,7 @@ const zdjecia = ["", "Ewa", "Maria"];  // tablica (array) stringów
       }
     ];
 */
-let slideNr = 0;
+let slideNr = 1;
 const data = [
   {
     title: "pink lake",
