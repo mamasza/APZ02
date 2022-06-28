@@ -37,4 +37,18 @@ function changeHTMLInfo (slideNr){
   const titleDOM =document.querySelector("h2") 
   titleDOM.innerHTML=title
 }
-changeHTMLInfo(2)
+const lewa = document.querySelector('.lefftArr')
+lewa.onclick = function(){
+    console.log("click")
+slideNr = slideNr-1;
+
+changeHTMLinfo(slideNr);
+}
+
+const prawa = document.querySelector('.rightArr')
+prawa.onclick = function(){
+    console.log("click")
+    slideNr = slideNr+1;
+
+changeHTMLinfo(slideNr);
+}
