@@ -1,3 +1,4 @@
+/*
 const zdjecia = ["", "Ewa", "Maria"];  // tablica (array) stringów 
 	const views = [ 		// tablica obiektów
       {
@@ -9,3 +10,31 @@ const zdjecia = ["", "Ewa", "Maria"];  // tablica (array) stringów
         "name" : " Drugi "
       }
     ];
+*/
+const data = [
+  {
+    title: "pink lake",
+    src:  "1.webp",
+  },
+  {
+    title: "single island",
+    src:  "2.webp",
+  },
+  {
+    title: "forest lake",
+    src:  "3.webp",
+  },
+]
+console.log(data)
+/*
+const photo = document.querySelector("img")
+photo.src="1.webp"
+
+*/
+
+function changeHTMLInfo (slideNr){
+  const title = data[slideNr].title 
+  const titleDOM =document.querySelector("h2") 
+  titleDOM.innerHTML=title
+}
+changeHTMLInfo(2)
