@@ -75,9 +75,7 @@ const leftArr = document.querySelector(".leftArr")
 leftArr.onclick = function(){
   changeSlide( "left" )
 }
-const rightArr = document.querySelector(".rightArr")
-
-rightArr.onclick = function(){
+document.querySelector(".rightArr").onclick = () => {
   changeSlide( "right" )
 }
 
